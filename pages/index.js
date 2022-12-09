@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import SecondPart from "../components/SecondPart";
 import NavBar from "../components/NavBar";
 import ThirdPart from "../components/ThirdPart";
+import RealThird from "../components/RealThird";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
 
       <main className="" role={`main`}>
         <section className="h-[100px] sticky z-50 bg-white top-0  shadow-xl">
-          <NavBar/>
+          <NavBar />
         </section>
         <section className="bg-lin mt-2 mx-6  h-[80vh]" role="banner">
           <Hero />
@@ -24,10 +25,12 @@ export default function Home() {
         <section className=" mx-6  min-h-[70vh]" role="">
           <SecondPart />
         </section>
-
-          <section className=" mx-6  min-h-[70vh]" role="">
-              <ThirdPart />
-          </section>
+        <section className=" mx-6  min-h-[70vh]" role="">
+          <RealThird />
+        </section>
+        <section className=" mx-6  min-h-[70vh]" role="">
+          <ThirdPart />
+        </section>
       </main>
 
       <footer></footer>

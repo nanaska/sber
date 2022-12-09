@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+}
 .bg-lin {
   background: linear-gradient(102.56deg, #157fc4 2.15%, #ccebff 97.48%);
   border-radius: 70px 70px 350px 70px;
