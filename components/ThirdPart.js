@@ -4,7 +4,7 @@ export default function ThirdPart() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="ml-10 mt-10 flex flex-col mr-auto ">
-        <span className="text-6xl text-[#0E0544] font-[700]">
+        <span className="text-xl md:text-6xl text-[#0E0544] font-[700]">
           Ты можешь поговорить с нами
         </span>
       </div>

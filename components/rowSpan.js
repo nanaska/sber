@@ -3,12 +3,15 @@ import { motion } from "framer-motion";
 export default function RowSpan({ rowClass, deparment, src }) {
   return (
     <motion.div
-      viewport={{
-        opacity: 1,
-        x: 0,
-      }}
+        viewport={{ once: true }}
+        whileInView={{
+    opacity: 1,
+            x: 0
+    }}
+
       whileHover={{
         y: -20,
+
       }}
       initial={{
         y: 0,
@@ -16,7 +19,7 @@ export default function RowSpan({ rowClass, deparment, src }) {
         x: -100,
       }}
       transition={{
-        delay: 0.3,
+        delay: 0,
         duration: 0.5,
       }}
       className={`w-full relative flex items-center justify-between  mt-4 ${rowClass} min-h-[20vh] `}

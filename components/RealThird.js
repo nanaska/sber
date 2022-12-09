@@ -1,32 +1,51 @@
-import useEmblaCarousel from "embla-carousel-react";
-import Image from "next/image";
+import Image from "next/image"
+import {Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
 
-export default function RealThird() {
-  const [emblaRef] = useEmblaCarousel();
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-  return (
-    <>
-      <div className="flex w-full flex-col items-center justify-center">
-        <div className="ml-10 mt-10 flex flex-col mr-auto ">
-          <span className="text-6xl text-[#0E0544] font-[700]">
-            Дополнительные активности
-          </span>
-          <span className="text-3xl mt-4 text-[#0E0544] font-[400]">
-            У нас можно не только учиться.
-          </span>
-        </div>
-        <div>
-          <div className="embla w-full my-4" ref={emblaRef}>
-            <div className="embla__container">
-              <div className="embla__slide">
-                <Image src={`/slide1.png`} width={720} height={520} />
-              </div>
-              <div className="embla__slide">Slide 2</div>
-              <div className="embla__slide">Slide 3</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/autoplay"
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import HeroImage from "../media/media-1.png"
+
+export default function realThird(){
+  return(<div className="max-w-4xl px-auto mt-0 flex items-center justify-center mb-0 md:mt-0">
+
+
+
+    {/*<Swiper*/}
+    {/*    // install Swiper modules*/}
+    {/*    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}*/}
+    {/*    spaceBetween={0}*/}
+    {/*    slidesPerView={1}*/}
+
+    {/*    centeredSlides={true}*/}
+    {/*    autoplay={{*/}
+    {/*      delay: 5000,*/}
+    {/*      disableOnInteraction: false,*/}
+    {/*    }}*/}
+    {/*    pagination={{ clickable: true, color: "#FFD2B0" }}*/}
+
+    {/*    onSwiper={(swiper) => {}}*/}
+    {/*    onSlideChange={() => {}}*/}
+    {/*>*/}
+    {/*  <SwiperSlide>*/}
+    {/*    <Image alt="Акция 10% за заказ с собой" src={HeroImage} width={1524} height={720}/>*/}
+    {/*  </SwiperSlide>*/}
+    {/*  <SwiperSlide>*/}
+    {/*    <Image alt="Акция 10% за заказ с собой" src={HeroImage} width={1524} height={720}/>*/}
+    {/*  </SwiperSlide>*/}
+    {/*  <SwiperSlide>*/}
+    {/*    <Image alt="Акция 10% за заказ с собой" src={HeroImage} width={1524} height={720}/>*/}
+    {/*  </SwiperSlide>*/}
+    {/*  <SwiperSlide>*/}
+    {/*    <Image alt="Акция 10% за заказ с собой" src={HeroImage} width={1524} height={720}/>*/}
+    {/*  </SwiperSlide>*/}
+    {/*  <br/>*/}
+    {/*</Swiper>*/}
+
+  </div>)
 }
