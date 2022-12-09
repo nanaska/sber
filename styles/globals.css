@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-lin {
+  background: linear-gradient(102.56deg, #157fc4 2.15%, #ccebff 97.48%);
+  border-radius: 70px 70px 350px 70px;
+}
+.btn-hero {
+  background: linear-gradient(93.93deg, #1a25cd 10.55%, #747ee4 100%);
+  box-shadow: 1.44615px 7.23077px 5.78462px rgba(0, 0, 0, 0.25);
+  border-radius: 36.1538px;
+}
+.row1 {
+  background: linear-gradient(150.84deg, #ec1c67 5.15%, #ffcccc 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+.row2 {
+  background: linear-gradient(150.84deg, #c415b2 5.15%, #ffccf7 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row3 {
+  background: linear-gradient(150.84deg, #6a04bb 5.15%, #e2ccff 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row4 {
+  background: linear-gradient(150.84deg, #2d15c4 5.15%, #ccebff 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row5 {
+  background: linear-gradient(150.84deg, #1972bc 5.15%, #ccebff 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row6 {
+  background: linear-gradient(150.84deg, #00bcd9 5.15%, #ccffff 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row7 {
+  background: linear-gradient(150.84deg, #036f1a 5.15%, #aae1af 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row8 {
+  background: linear-gradient(150.84deg, #56cf1c 5.15%, #dfffcc 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row9 {
+  background: linear-gradient(150.84deg, #ffa724 5.15%, #ffe3cf 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row10 {
+  background: linear-gradient(150.84deg, #fa6e32 5.15%, #ffeecc 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
+
+.row11 {
+  background: linear-gradient(150.84deg, #ea5151 5.15%, #ffcccc 95.41%);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 25px 25px 150px 25px;
+}
