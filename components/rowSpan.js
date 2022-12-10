@@ -22,15 +22,18 @@ export default function RowSpan({ rowClass, deparment, src }) {
         delay: 0,
         duration: 0.5,
       }}
-      className={`w-full relative flex items-center justify-between  mt-4 ${rowClass} min-h-[20vh] `}
+      className={`w-full relative flex items-center justify-between  mt-4 ${rowClass} h-[48px] md:min-h-[20vh] `}
     >
       <div className=" h-full flex items-center justify-center ">
-        <span className="text-white ml-10 font-[500] text-4xl">
+        <span className="text-white ml-10 font-[500] max-w-[200px] md:max-w-full text-[15px] md:text-4xl">
           {deparment}
         </span>
       </div>
-      <div className="absolute bottom-[-20px] right-5">
-        <Image className=" z-10 " src={src} width={230} height={230} />
+      <div className="hidden md:block absolute bottom-[-20px] right-0 md:right-5">
+        <Image className=" z-10 p-10 md:p-0" src={src} width={230} height={230} />
+      </div>
+      <div className="absolute md:hidden  bottom-[-45px] right-0 md:right-5">
+        <Image className=" z-10 p-10 md:p-0" src={src} width={150} height={230} />
       </div>
     </motion.div>
   );

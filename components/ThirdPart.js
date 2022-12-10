@@ -11,7 +11,7 @@ export default function ThirdPart() {
       <div>
         <Collapse.Group>
           <Collapse
-            className="text-3xl font-[600]"
+            className="text-3xl  font-[600]"
             title="Присоединяйся к ЯрГУ COMUNITY в Discord"
           >
             <Text>

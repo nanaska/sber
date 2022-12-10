@@ -5,6 +5,7 @@ import SecondPart from "../components/SecondPart";
 import NavBar from "../components/NavBar";
 import ThirdPart from "../components/ThirdPart";
 import RealThird from "../components/RealThird";
+import ChatBot from "../components/ChatBot";
 const SLIDE_COUNT = 5;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
@@ -17,7 +18,8 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="" role={`main`}>
+        <main className="relative" role={`main`}>
+            <ChatBot/>
           <section className="h-[100px] sticky z-50 bg-white top-0  shadow-xl">
             <NavBar />
           </section>
