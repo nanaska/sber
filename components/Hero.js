@@ -24,10 +24,10 @@ export default function Hero() {
                 duration: 0.5,
             }}
             className="grid px-2 md:px-12 grid-cols-6   grid-rows-1 h-full">
-            <div className="flex flex-col h-full col-start-1  col-end-4 md:col-end-5  items-center justify-center">
+            <div className="flex flex-col h-full col-start-1  col-end-4 md:col-end-5  items-start justify-center">
                 <div>
-          <span>
-            <h1 className="text-xl md:text-5xl max-w-[170px] mr-auto md:max-w-full text-white font-[700]">
+          <span className="mr-auto">
+            <h1 className="text-xl md:text-5xl 2xl:text-6xl max-w-[170px] mr-auto md:max-w-[800px] text-white font-[700]">
               ЯрГУ — твой инструмент достижения успеха
             </h1>
           </span>
@@ -39,7 +39,19 @@ export default function Hero() {
             </div>
             <div className="col-start-3  md:col-start-4 flex items-center justify-center relative col-end-7 ">
                 <Image
-                    className="absolute py-auto my-auto bottom-[35px] md:bottom-10 right-[0]"
+                    className="block xl:hidden absolute py-auto my-auto bottom-[35px]  md:bottom-12 2xl:bottom-48 right-[0]"
+                    src={`/Saly-10.png`}
+                    width={500}
+                    height={500}
+                />
+                <Image
+                    className="hidden  2xl:block absolute py-auto my-auto bottom-[35px]  md:bottom-12 2xl:bottom-32 right-[0]"
+                    src={`/Saly-10.png`}
+                    width={700}
+                    height={500}
+                />
+                <Image
+                    className="hidden xl:block 2xl:hidden absolute py-auto my-auto bottom-[35px]  md:bottom-12 2xl:bottom-48 right-[0]"
                     src={`/Saly-10.png`}
                     width={500}
                     height={500}
