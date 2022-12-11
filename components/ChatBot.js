@@ -8,13 +8,13 @@ export default function ChatBot() {
     const handler = () => setVisible(true);
     const closeHandler = () => {
         setVisible(false);
-        console.log("closed");
+
     };
     return (
         <div>
             <div onClick={handler} className="fixed  bg-gray-500 hover:scale-105 active:scale-95 duration-150 rounded-full w-[55px] h-[55px]  bottom-4 right-3 z-50">
                 <Image className="my-auto  mx-auto" src={`/chaticon.png`} width={40} height={40}/>
-            </div>)
+            </div>
             <Modal
                 closeButton
                 blur
@@ -32,7 +32,7 @@ export default function ChatBot() {
                     {DataForChat.map((item,index)=>{
                         return(<div  key={index}>
                             <Collapse title={item.title}><Text size={14}>{item.description}</Text></Collapse>
-                            
+
 
 
                         </div>)
