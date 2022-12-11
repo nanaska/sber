@@ -10,14 +10,18 @@ export default function Hero() {
             viewport={{once: true}}
             whileInView={{
                 opacity: 1,
-                x: 0
-            }}
+                x: 0,
+                y: 0,
 
+
+            }}
 
             initial={{
                 y: 0,
                 opacity: 0,
-                x: -100,
+                x: -200,
+
+
             }}
             transition={{
                 delay: 0,
@@ -37,7 +41,9 @@ export default function Hero() {
                     Подробнее
                 </div>
             </div>
-            <div className="col-start-3  md:col-start-4 flex items-center justify-center relative col-end-7 ">
+            <div
+
+                className="col-start-3  md:col-start-4 flex items-center justify-center relative col-end-7 ">
                 <Image
                     className="block xl:hidden absolute py-auto my-auto bottom-[35px]  md:bottom-12 2xl:bottom-48 right-[0]"
                     src={`/Saly-10.png`}

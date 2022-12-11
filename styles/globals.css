@@ -1,4 +1,5 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +9,9 @@
 }
 button, [type='button'], [type='reset'], [type='submit']{
   background-color: #B1DBF7;
+}
+body{
+  overflow-x: hidden;
 }
 .btn-afe{
   background: linear-gradient(94.55deg, #2F23B0 5.28%, #C7C3ED 107.62%);
@@ -106,4 +110,7 @@ button, [type='button'], [type='reset'], [type='submit']{
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 25px 25px 150px 25px;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
 }

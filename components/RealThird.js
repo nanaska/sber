@@ -23,11 +23,11 @@ const autoplay = useRef(Autoplay({ delay: 3000 }));
 
               },
               indicator: {
-                  width: 30,
-                  height: 30,
+                  width: 15,
+                  height: 15,
                   transition: 'width 250ms ease',
                   '&[data-active]': {
-                      width: 40,
+                      width: 30,
                       background: "linear-gradient(154.56deg, #2086C8 11.7%, #B1DBF7 85.77%)"
                   },
               },
@@ -35,7 +35,7 @@ const autoplay = useRef(Autoplay({ delay: 3000 }));
           slideSize="100%"  slideGap="xs" controlSize={28} loop withIndicators>
           {media.map((value, index)=>{
               return(<>
-              <Carousel.Slide key={index}><Image src={value} width={1580} height={728}/></Carousel.Slide>
+              <Carousel.Slide key={index}><Image quality={100} src={value} width={1780} height={728}/></Carousel.Slide>
               </>)
           })}
       </Carousel>

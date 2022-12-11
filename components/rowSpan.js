@@ -19,8 +19,8 @@ export default function RowSpan({ rowClass, deparment, src }) {
         x: -100,
       }}
       transition={{
-        delay: 0,
-        duration: 0.5,
+
+        duration: 0.25,
       }}
       className={`w-full relative flex items-center justify-between  mt-4 ${rowClass} h-[48px] md:min-h-[20vh] `}
     >

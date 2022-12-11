@@ -61,7 +61,7 @@ export default function SecondPart() {
 
   return (
     <div className="flex flex-col items-center justify-start">
-      <div className="ml-10 mt-10 flex flex-col mr-auto ">
+      <div  className="ml-10 mt-10 flex flex-col mr-auto ">
         <span className="text-xl md:text-6xl text-[#0E0544] font-[700]">
           Наши факультеты
         </span>
