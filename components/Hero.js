@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {motion} from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -37,8 +38,8 @@ export default function Hero() {
           </span>
                 </div>
                 <div
-                    className="mt-8 mr-auto hover:scale-105 duration-150 cursor-pointer active:scale-100 text-white btn-hero text-[10px] md:text-2xl px-6 py-2 font-[700]">
-                    Подробнее
+                    className="mt-8 mr-auto      hover:scale-105 duration-150 cursor-pointer active:scale-100 text-white btn-hero text-[10px] md:text-2xl px-6 py-2 font-[700]">
+                    <Link href="https://www.uniyar.ac.ru/yargu/">Подробнее</Link>
                 </div>
             </div>
             <div

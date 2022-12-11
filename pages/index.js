@@ -28,10 +28,10 @@ export default function Home() {
           <section id="faculty" className=" mx-2 md:mx-6  min-h-[70vh]" role="">
             <SecondPart />
           </section>
-          <section id="activity" className=" mx-2 md:mx-6 flex items-center justify-center  min-h-[70vh]" role="">
+          <section id="activity" className=" mx-2 md:mx-6 flex items-center justify-center  mt-5" role="">
             <RealThird />
           </section>
-          <section id="community" className=" mx-2 md:mx-6  min-h-[70vh]" role="">
+          <section id="community" className=" mx-2 md:mx-6  mb-14" role="">
             <ThirdPart />
           </section>
         </main>

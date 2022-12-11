@@ -8,10 +8,10 @@ export default function ThirdPart() {
           Ты можешь поговорить с нами
         </span>
       </div>
-      <div>
+      <div className="md:pl-8 mt-5 ">
         <Collapse.Group>
           <Collapse
-            className="text-3xl  font-[600]"
+            className="text-xl md:text-3xl  font-[400]"
             title="Присоединяйся к ЯрГУ COMUNITY в Discord"
           >
             <Text>
@@ -22,7 +22,7 @@ export default function ThirdPart() {
             </Text>
           </Collapse>
           <Collapse
-            className="text-3xl font-[600]"
+            className="text-xl md:text-3xl font-[400]"
             title="Присоединяйся к ЯрГУ COMUNITY  в Telegram"
           >
             <Text>

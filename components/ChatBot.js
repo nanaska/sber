@@ -15,7 +15,7 @@ export default function ChatBot() {
         <div>
             <div onClick={handler}
                  className="fixed  bg-gray-500 hover:scale-105 active:scale-95 duration-150 rounded-full w-[55px] h-[55px]  bottom-4 right-3 z-50">
-                <Image className="my-auto  mx-auto" src={`/chaticon.png`} width={40} height={40}/>
+                <Image className="my-auto  mx-auto" src={`/faq.svg`} width={60} height={60}/>
             </div>
             <Modal
                 closeButton

@@ -8,12 +8,12 @@ export default function realThird(){
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const autoplay = useRef(Autoplay({ delay: 3000 }));
 
-  return(<div className="w-full md:p-24 mx-auto px-auto mt-0 flex flex-col md:items-start items-center justify-center mb-0 md:mt-0">
-    <div className="flex flex-col mb-5 justify-center items-start">
-        <span className="text-center text-[36px] md:text-5xl font-[700]">Дополнительные активности</span>
-        <span className="text-center text-[13px] md:text-[36px] font-[400] md:mr-auto">У нас можно не только учиться.</span>
+  return(<div className="w-full  mx-auto px-auto mt-0 flex flex-col md:items-start items-center justify-center mb-0 md:mt-0">
+    <div className="flex flex-col  md:p-8 mb-5 justify-center items-start">
+        <span className="text-xl md:text-6xl text-[#0E0544] font-[700]">Дополнительные активности</span>
+        <span className="text-center text-[13px] md:text-[36px] text-[#0E0544] font-[400] md:mr-auto">У нас можно не только учиться.</span>
     </div>
-  <div className="w-full  ">
+  <div className="w-full md:p-24  ">
       <Carousel
           plugins={[autoplay.current]}
           onMouseEnter={autoplay.current.stop}
