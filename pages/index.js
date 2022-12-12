@@ -12,6 +12,7 @@ export default function Home() {
   return (
       <div>
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>Яргу</title>
           <meta name="description" content="Ярославский государственный университет имени Павла Григорьевича Демидова. ЯрГУ классический университет, позволяющий получить классическое образование абитуриенту." />
           <link rel="icon" href="/favicon.ico" />
