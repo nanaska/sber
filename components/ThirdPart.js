@@ -1,4 +1,5 @@
 import { Collapse, Text } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function ThirdPart() {
   return (
@@ -15,10 +16,9 @@ export default function ThirdPart() {
             title="Присоединяйся к ЯрГУ COMUNITY в Discord"
           >
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              <div className="flex p-4 items-center justify-between  ">
+                <div className={`mr-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/discord.svg`} width={40} height={30}/> ЯрГУ в Discord</div>
+              </div>
             </Text>
           </Collapse>
           <Collapse

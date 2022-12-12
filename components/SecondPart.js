@@ -75,6 +75,7 @@ export default function SecondPart() {
           return (
             <RowSpan
               key={index}
+
               rowClass={a[item].rowClass}
               deparment={a[item].deparment}
               src={a[item].src}
