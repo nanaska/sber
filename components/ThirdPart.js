@@ -1,5 +1,6 @@
 import { Collapse, Text } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ThirdPart() {
   return (
@@ -15,22 +16,23 @@ export default function ThirdPart() {
             className="text-xl md:text-3xl  font-[400]"
             title="Присоединяйся к ЯрГУ COMUNITY в Discord"
           >
-            <Text>
+
+              <Link href="https://discord.gg/cSg4WFxFkK">
               <div className="flex p-4 items-center justify-between  ">
                 <div className={`mr-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/discord.svg`} width={40} height={30}/> ЯрГУ в Discord</div>
               </div>
-            </Text>
+              </Link>
+
           </Collapse>
           <Collapse
             className="text-xl md:text-3xl font-[400]"
             title="Присоединяйся к ЯрГУ COMUNITY  в Telegram"
           >
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </Text>
+            <Link href="https://t.me/DemidHelpForEntrant_bot">
+            <div className="flex  p-4 items-center justify-between  ">
+              <div className={`ml-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/tg.svg`} width={40} height={30}/>ЯрГУ в Telegram</div>
+            </div>
+            </Link>
           </Collapse>
         </Collapse.Group>
       </div>

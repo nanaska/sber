@@ -1,11 +1,9 @@
 import Image from "next/image";
-import React from "react";
-import {Modal, Input, Row, Checkbox, Button, Text, Collapse} from "@nextui-org/react";
-import RowOfQuest from "./RowOfQuest"
-import {DataForChat} from "./DataForChat";
-
+import {useState} from "react";
+import {Modal, Text, Collapse} from "@nextui-org/react";
+import Link from "next/link"
 export default function ChatBot() {
-    const [visible, setVisible] = React.useState(false);
+    const [visible, setVisible] = useState(false);
     const handler = () => setVisible(true);
     const closeHandler = () => {
         setVisible(false);
@@ -108,8 +106,8 @@ export default function ChatBot() {
                         <div className="w-full h-[1px] border-b border-gray-400"></div>
                         <Text size={24} className="mt-2 font-[500]">Появились вопросы? Заходи к нам</Text>
                         <div className="flex p-4 items-center justify-between  ">
-                            <div className={`mr-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/discord.svg`} width={40} height={30}/> ЯрГУ в Discord</div>
-                            <div className={`ml-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/tg.svg`} width={40} height={30}/>ЯрГУ в Telegram</div>
+                            <Link href="https://discord.gg/cSg4WFxFkK"> <div className={`mr-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/discord.svg`} width={40} height={30}/> ЯрГУ в Discord</div></Link>
+                            <Link href="https://t.me/DemidHelpForEntrant_bot"><div className={`ml-2 hover:bg-[#C8C8C8] p-2 rounded duration-100 text-center flex items-center justify-center gap-x-2`}><Image src={`/tg.svg`} width={40} height={30}/>ЯрГУ в Telegram</div></Link>
                         </div>
                     </div>
 

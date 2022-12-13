@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-export default function RowSpan({ rowClass, deparment, src }) {
+import Link from "next/link";
+export default function RowSpan({ rowClass, deparment, src, link }) {
+  console.log(link)
   return (
+      <Link href={link}>
     <motion.div
         viewport={{ once: true }}
         whileInView={{
@@ -35,6 +38,8 @@ export default function RowSpan({ rowClass, deparment, src }) {
       <div className="absolute md:hidden  bottom-[-45px] right-0 md:right-5">
         <Image className=" z-10 p-10 md:p-0" src={src} width={150} height={230} />
       </div>
+
     </motion.div>
+      </Link>
   );
 }
