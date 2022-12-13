@@ -1,11 +1,14 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {useRouter} from "next/router";
 export default function RowSpan({ rowClass, deparment, src, link }) {
-  console.log(link)
+  const router = useRouter()
+
   return (
-      <Link href={link}>
+
     <motion.div
+        onClick={()=>{router.push(link)}}
         viewport={{ once: true }}
         whileInView={{
     opacity: 1,
@@ -22,8 +25,8 @@ export default function RowSpan({ rowClass, deparment, src, link }) {
         x: -100,
       }}
       transition={{
-
-        duration: 0.25,
+        x: { delay: 0.25 },
+        duration: .25,
       }}
       className={`w-full relative flex items-center justify-between  mt-4 ${rowClass} h-[48px] md:min-h-[20vh] `}
     >
@@ -40,6 +43,6 @@ export default function RowSpan({ rowClass, deparment, src, link }) {
       </div>
 
     </motion.div>
-      </Link>
+
   );
 }
